@@ -4,9 +4,10 @@ namespace App\Models;
 
 class Feedback
 {
+    static private $tabelaFeedback = 'Feedback';
+    
     public $tituloFeedback, $descricaoFeedback, $tipoFeedback, $statusFeedback;
     public $idFeedback;
-    static private $tabelaFeedback = 'Feedback';
     public $dbFeedback;
 
     public function __construct($id = NULL)

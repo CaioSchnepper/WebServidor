@@ -31,8 +31,14 @@ class CadastrarFeedback
                     <input class='form-control' type='text' name='descricao'>
                     <small>Tipo:</small>
                     <input class='form-control' type='text' name='tipo'>
-                    <small>Status:</small>
-                    <input class='form-control' type='text' name='status'>
+                    <small>Status:</small>                    
+                    <select class='form-control form-select' name='status'>
+                        <option value='Recebido'>Recebido</option>
+                        <option value='Analise'>Analise</option>
+                        <option value='Desenvolvimento'>Desenvolvimento</option>
+                        <option value='Finalizado'>Finalizado</option>
+                    </select>
+
                     <button class='btn btn-primary w-100' type='submit' name='btn-cadastrar' style='margin:16px 0px;'>Salvar</button> 
                 </form>
                 <a href='index.php'><button class='btn btn-secondary w-100' style='margin:-16px 0px;'>Inicio</button></a> 

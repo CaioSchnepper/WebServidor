@@ -35,7 +35,7 @@ class ListarFeedback
                     <th>Descrição</th>
                     <th>Tipo</th>
                     <th>Status</th>
-                    <th>Editar</th>
+                    <th>Opções</th>
                 </tr>
                 </thead>
         ";
@@ -51,7 +51,7 @@ class ListarFeedback
                     <td>$data->tipo</td>
                     <td>$data->status</td>
                     <td>
-                        <a href='feedback.php?id=$data->id'><button type='button' class='btn btn-primary'>Editar</button></a>
+                        <a href='feedback.php?id=$data->id'><button type='button' class='btn btn-primary'>Atualizar status</button></a>
                         <a href='remover-feedback.php?id=$data->id'><button type='button' class='btn btn-danger'>Excluir</button></a>
                     </td>
                 </tr>

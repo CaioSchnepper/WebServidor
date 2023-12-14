@@ -28,13 +28,18 @@ class Feedback
                     <small>ID:</small>
                     <input class='form-control' type='text' name='id' value='$feedback->idFeedback' readonly>
                     <small>Título:</small>
-                    <input class='form-control' type='text' name='titulo' value='$feedback->tituloFeedback'>
+                    <input class='form-control' type='text' name='titulo' value='$feedback->tituloFeedback' readonly>
                     <small>Descrição:</small>
-                    <input class='form-control' type='text' name='descricao' value='$feedback->descricaoFeedback'>
+                    <input class='form-control' type='text' name='descricao' value='$feedback->descricaoFeedback' readonly>
                     <small>Tipo:</small>
-                    <input class='form-control' type='text' name='tipo' value='$feedback->tipoFeedback'>
+                    <input class='form-control' type='text' name='tipo' value='$feedback->tipoFeedback' readonly>
                     <small>Status:</small>
-                    <input class='form-control' type='text' name='status' value='$feedback->statusFeedback'>
+                    <select class='form-control form-select' name='status' value='$feedback->statusFeedback'>
+                        <option value='Recebido'>Recebido</option>
+                        <option value='Analise'>Analise</option>
+                        <option value='Desenvolvimento'>Desenvolvimento</option>
+                        <option value='Finalizado'>Finalizado</option>
+                    </select>
                     <button class='btn btn-primary w-100' type='submit' name='btn-cadastrar' style='margin:16px 0px;'>Salvar</button> 
                 </form>
                 <a href='index.php'><button class='btn btn-secondary w-100' style='margin:-16px 0px;'>Voltar</button></a> 
