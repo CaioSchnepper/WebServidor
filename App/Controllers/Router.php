@@ -8,7 +8,7 @@ use App\Views\CadastrarFeedback;
 use App\Views\ListarFeedback;
 use App\Views\Main;
 
-class PageCompiler
+class Router
 {
     public $page;
 

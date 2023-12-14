@@ -10,7 +10,7 @@ if(isset($_POST['btn-cadastrar'])){
     $feedback->atualizarFeedback();
 }
 if(isset($_GET['id'])){
-    $page = new \App\Controllers\PageCompiler('feedback',$_GET['id']);
+    $page = new \App\Controllers\Router('feedback',$_GET['id']);
 } elseif (isset($_POST['id'])){
-    $page = new \App\Controllers\PageCompiler('feedback',$_POST['id']);
+    $page = new \App\Controllers\Router('feedback',$_POST['id']);
 }

@@ -2,7 +2,7 @@
 
 require_once "vendor/autoload.php";
 
-$compiler = new \App\Controllers\PageCompiler('cadastrar-feedback');
+$compiler = new \App\Controllers\Router('cadastrar-feedback');
 $feedback = new \App\Models\Feedback();
 
 if(isset($_POST['btn-cadastrar'])){
